@@ -8,18 +8,18 @@ use Saurabh85mahajan\ChuckNorrisJokes\JokeFactory;
 class JokeFactoryTest extends TestCase
 {
     /** @test */
-    public function it_returns_a_random_joke() 
+    public function it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
             'This is a joke',
         ]);
         $joke = $jokes->getRandomJoke();
-        
+
         $this->assertSame('This is a joke', $joke);
     }
 
     /** @test */
-    public function it_returns_a_predefined_joke() 
+    public function it_returns_a_predefined_joke()
     {
         $chuckNorrisjokes = [
             'Chuck Norris can strangle you with a cordless phone',
@@ -29,7 +29,7 @@ class JokeFactoryTest extends TestCase
         ];
         $jokes = new JokeFactory();
         $joke = $jokes->getRandomJoke();
-        
+
         $this->assertContains($joke, $chuckNorrisjokes);
     }
 }
