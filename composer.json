@@ -1,0 +1,26 @@
+{
+    "name": "saurabh85mahajan/chuck-norris-jokes",
+    "description": "Package to return random jokes about Chuck Norris",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saurabh M",
+            "email": "saurabh85mahajan@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Saurabh85mahajan\\ChuckNorrisJokes\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saurabh85mahajan\\ChuckNorrisJokes\\Test\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
