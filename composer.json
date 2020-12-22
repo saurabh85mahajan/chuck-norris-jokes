@@ -9,7 +9,9 @@
             "email": "saurabh85mahajan@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
     "autoload": {
         "psr-4": {
             "Saurabh85mahajan\\ChuckNorrisJokes\\" : "src/"
