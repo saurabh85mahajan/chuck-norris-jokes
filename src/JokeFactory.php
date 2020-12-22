@@ -1,6 +1,7 @@
 <?php
 
 namespace Saurabh85mahajan\ChuckNorrisJokes;
+
 class JokeFactory
 {
     protected $jokes = [
@@ -10,14 +11,14 @@ class JokeFactory
         'Chuck Norris makes onions cry.',
     ];
 
-    public function __construct(array $jokes = null) 
+    public function __construct(array $jokes = null)
     {
         if ($jokes) {
             $this->jokes = $jokes;
         }
     }
 
-    public function getRandomJoke() 
+    public function getRandomJoke()
     {
         return $this->jokes[array_rand($this->jokes)];
     }
